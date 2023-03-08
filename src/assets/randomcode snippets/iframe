@@ -1,0 +1,11 @@
+iframe {
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    box-sizing: border-box;
+  }
+ 
+
+
+  
+  <iframe :src="'https://en.wikipedia.org/wiki/Main_Page'"></iframe>

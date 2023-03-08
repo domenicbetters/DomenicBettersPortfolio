@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'nightside';
+    src: local('nightside'),
+    url(./fonts/nightside.ttf);
+}
+
+@font-face {
+    font-family: 'fragment';
+    src: local('fragment'),
+    url(./fonts/fragment.ttf);
+}
+
+
+body {
+    background-color: rgb(255, 247, 237);
+    font-family: 'fragment';
+}
+
+a {
+    color:rgb(99, 5, 109)
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+}
