@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color:rgb(99, 5, 109)
+    color:rgb(57, 3, 63);
 }
 
 #app {
@@ -31,4 +31,31 @@ a {
 .footer {
     position: fixed;
     bottom: 10px;
+}
+
+.main-page {
+    width: 95vw; 
+    min-height: 95vh; 
+    border: 1px solid pink;
+    display:flex;
+    flex-direction: row;
+}
+.main-page-left {
+    width: 50%;
+    border: 1px solid green;
+}
+.main-page-right {
+    width: 50%;
+    background-image: url(./images/domenic-betters-mushroomhex.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.menu-box {
+    border: solid 2px black;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    width: fit-content;
+    padding: 60px;
+    margin:60px;
+    font-size: 3em;
 }
