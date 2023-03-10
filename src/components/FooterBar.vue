@@ -25,6 +25,7 @@
         padding-right: 2px;
         border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
         box-shadow: 0 5px 25px 5px rgba(0,0,0,.5);
+        background-color: rgba(255, 247, 237, 0.712);
         box-sizing: content-box
     }
 
