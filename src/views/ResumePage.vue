@@ -1,5 +1,5 @@
 <template>
-  <div class = "resume-back ">
+  <div class = "resume-back scroll-block">
     <div class = "cover-img skin-pull"></div>
     <div class = "resume-box">
       <h1>The resume of one Domenic Betters</h1> 
@@ -110,9 +110,14 @@
     components: {
     }
   }
+
+
+  
   </script>
   
   <style scoped>
+
+  
   .resume-back {
     background-image: url(../assets/images/ripback.png) !important;
     background-size: contain;
@@ -189,6 +194,8 @@
     max-width: 75ch;
     position: absolute;
   }
+
+  
 /* 
   342424 is the color hash for the back */
   </style>

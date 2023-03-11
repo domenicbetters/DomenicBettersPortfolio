@@ -199,6 +199,11 @@ a {
 	-webkit-animation: skin-pull 2s ease-in-out 2.5s both;
 	        animation: skin-pull 2s ease-in-out 2.5s both;
         }
+        .scroll-block {
+            -webkit-animation: scroll-block 4.5s ease-in-out  both;
+                    animation: scroll-block 4.5s ease-in-out  both;
+                }
+       
 /**
  * ----------------------------------------
  * animation slide-bottom
@@ -296,12 +301,36 @@ a {
   }
   @keyframes skin-pull {
     0% {
+        
       -webkit-transform: rotatex(180deg) translateY(0px);
               transform:  translateY(0px);
+            
     }
     100% {
       -webkit-transform:  translateY(-105vh);
               transform: skewy(195deg)  translateY(-105vh);
+    }
+  }
+
+  @-webkit-keyframes scroll-block {
+    0% {
+      -webkit-transform: rotatex(180deg) translateY(0px);
+              transform: rotatex(180deg)translateY(0px);
+    }
+    100% {
+      -webkit-transform: translateY(-105vh);
+              transform: translateY(-105vh);
+    }
+  }
+  @keyframes scroll-block {
+    0% {
+      height: 100vh;  
+      overflow: hidden;
+            
+    }
+    100% {
+      height: auto;  
+      overflow: auto;
     }
   }
 
