@@ -45,7 +45,8 @@ a {
 .main-page-right {
     width: 50%;
     background-image: url(./images/domenic-betters-mushroomhex.jpg);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: bottom;
 }
 
