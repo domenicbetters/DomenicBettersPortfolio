@@ -14,17 +14,17 @@ const routes = [
     redirect: { name: 'Main' }
   },
     {
-      path: "/dbettersport",
+      path: "/DomenicBettersPortfolio",
       name: "Main",
       component: MainPage
     },
     {
-      path: "/dbettersport/resume",
+      path: "/DomenicBettersPortfolio/resume",
       name: "Resume",
       component: ResumePage
     },
     {
-      path: "/dbettersport/projects",
+      path: "/DomenicBettersPortfolio/projects",
       name: "Projects",
       component: ProjectsPage
     },
