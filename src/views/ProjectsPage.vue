@@ -1,28 +1,33 @@
 <template>
-  <div>
+  <div class = "project-body">
    <router-link to="/"><p class = "back-button menu-link">Home</p></router-link>
    <h1>The Projects of one Domenic Betters</h1>
 
-
-   <div id="book">
-    <div class="my-page" data-density="soft">
-        Page Cover
-    </div>
-    <div class="my-page">
-        Page one
-    </div>
-    <div class="my-page">
-        Page two
-    </div>
-    <div class="my-page">
-        Page three
-    </div>
-    <div class="my-page">
-        Page four
-    </div>
-    <div class="my-page" data-density="soft">
-        Last page
-    </div>
+    <div id="book">
+      <div class="my-page" data-density="soft">
+          <h2>Gluttony of Gore</h2>
+          <div class = "project-img" >
+            <iframe width="100%" height="415" src="https://www.youtube.com/embed/uBbYOAs8s50?autoplay=1&mute=1&controls=0&loop=1&playlist=uBbYOAs8s50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; loop; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+      </div>
+      <div class="my-page info-page">
+          <h3>Gluttony of Gore (continued...)</h3>
+          <h4>What is it?</h4>
+          <p>Glutton of Gore is a ruby project using the ruby2d gem.  This gem allows for basic graphic interfaces and sprite animations.  Using this as a base, "Gluttony of Gore" was written from the ground up.  Everything from gravity and jump phsyics to hit-box detection was coded from scratch.  The artwork in the finished project will all be original work by myself as well.  Placeholders from the game "Splatterhouse" are being used in the mean time.  </p>
+          
+      </div>
+      <div class="my-page">
+          Page two
+      </div>
+      <div class="my-page">
+          Page three
+      </div>
+      <div class="my-page">
+          Page four
+      </div>
+      <div class="my-page" data-density="soft">
+          Last page
+      </div>
 </div>
 
 
@@ -47,8 +52,13 @@ import { PageFlip } from 'page-flip';
 async mounted() {
 
   const pageFlip = new PageFlip(document.getElementById('book'), {
-width: 400, // required parameter - base page width
-height: 400, // required parameter - base page height
+width: 600, // required parameter - base page width
+height: 800, // required parameter - base page height
+size: "stretch",
+minWidth: 215,
+maxWidth: 1000,
+minHeight: 420,
+maxHeight: 1350,
 
 });
 
@@ -63,19 +73,58 @@ height: 400, // required parameter - base page height
   
   <style scoped>
 
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 #book {
-  margin: 80px;
-  box-shadow: rgb(62, 62, 62) 5px 0px,  rgb(62, 62, 62) -5px 0px, rgb(106, 106, 106) 10px 0px,  rgb(106, 106, 106) -10px 0px, rgb(165, 165, 165) 15px 0px, rgb(165, 165, 165) -15px 0px, rgb(206, 206, 206) -20px 0px, rgb(206, 206, 206) 20px 0px, rgb(232, 232, 232) -25px 0px, rgb(232, 232, 232) 25px 0px,rgb(41, 19, 5) 35px 0px, rgb(41, 19, 5) -35px 0px;
-  border-radius: 2px;
+  margin: 50px;
+  box-shadow: #494029 5px 0px,  #494029 -5px 0px, #6f6446 10px 0px,  #6f6446 -10px 0px, #988c6c 15px 0px, #988c6c -15px 0px, #b4a98b -20px 0px, #b4a98b 20px 0px, #dbd2ba -25px 0px, #dbd2ba 25px 0px,#1d170a 30px 0px, #1d170a -30px 0px;
+  border-radius: 1px;
 }
 
+
 .my-page {
-  background-color: rgb(255, 235, 157);
+  background-image: url('@/assets/images/pageback.jpg');
+  background-size:100% 100%;
+  border: solid 1px rgba(0, 0, 0, 0.069);
+  border-radius: 1px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+  }
+
+.project-img {
+  width: 75%;
+  overflow: hidden;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+img {
+  width: 100%;
 }
 
 h1 {
     font-family: "nightside";
     font-size: 5em;
+  }
+
+  h2 {
+    font-family: "nightside";
+    font-size:2em;
+  }
+  .info-page {
+    align-items: start;
+    justify-content: start;
+    padding-left: 15px;
   }
 
   
