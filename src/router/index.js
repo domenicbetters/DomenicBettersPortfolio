@@ -1,6 +1,7 @@
 
 import MainPage from "@/views/MainPage.vue"
 import ResumePage from "@/views/ResumePage.vue"
+import ProjectsPage from "@/views/ProjectsPage.vue"
 import VueRouter from 'vue-router'
 import Vue from 'vue'
 
@@ -22,7 +23,12 @@ const routes = [
       name: "Resume",
       component: ResumePage
     },
-      
+    {
+      path: "/dbettersport/projects",
+      name: "Projects",
+      component: ProjectsPage
+    },
+    
   ]
 
   const router = new VueRouter({
