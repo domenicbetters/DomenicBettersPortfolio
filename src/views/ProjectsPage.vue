@@ -26,8 +26,8 @@
         <div class="my-page" data-density="soft">
             <h2>Antonios Pizzeria Website</h2>
             <div class = "project-img" >
-              <iframe width="100%" height="100%" src="https://domenicbetters.github.io/AntoniosPizza" title="description" style="-webkit-transform:scale(1);-moz-transform-scale(1);"></iframe>
-             </div>
+              <iframe width="100%" height="100%" src="https://domenicbetters.github.io/AntoniosPizza" title="description" class = "antoniosframe" ></iframe>
+           </div>
         </div>
         <div class="my-page info-page">
             <h3>Antonios Pizzeria Website (continued...)</h3>
@@ -132,6 +132,12 @@ useMouseEvents: false,
   
   <style scoped>
 
+  .antoniosframe {
+    -webkit-transform:scale(1) !important;
+    -moz-transform: scale(1) !important;
+  }
+
+ 
   .project-body {
     display: flex;
     flex-direction: column;
@@ -213,6 +219,29 @@ h1 {
   h2 {
     font-family: "nightside";
     font-size:2em;
+  }
+
+  @media (max-width: 975.5px) {
+    h2 {
+      font-size:1.5em;
+    }
+  }
+
+  @media (max-width: 725.5px) {
+    h2 {
+      font-size:1em;
+    }
+  }
+  @media (max-width: 532.5px) {
+    h2 {
+      font-size:1.5em;
+    }
+  }
+
+  @media (max-width: 363.5px) {
+    h2 {
+      font-size:1em;
+    }
   }
   .info-page {
     align-items: start;
